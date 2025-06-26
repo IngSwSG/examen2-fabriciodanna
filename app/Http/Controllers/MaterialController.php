@@ -53,7 +53,7 @@ class MaterialController extends Controller
             'idCategoria' => 'required|exists:categorias,idCategoria'
         ]);
 
-        Material::create($request->only(['codigo', 'unidadMedida', 'descripccion', 'ubicacion', 'idCategoria']));
+        Material::create($request->only(['codigo', 'unidadMedida', 'descripcion', 'ubicacion', 'idCategoria']));
 
         return redirect()->route('materials.create')->with('success', 'Material creado exitosamente');
     }
