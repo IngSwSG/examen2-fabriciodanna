@@ -55,6 +55,6 @@ class MaterialController extends Controller
 
         Material::create($request->only(['codigo', 'unidadMedida', 'descripcion', 'ubicacion', 'idCategoria']));
 
-        return redirect()->route('materials.create')->with('success', 'Material creado exitosamente');
+       return redirect()->route('material.create')->with('success', 'Material creado exitosamente');
     }
 }

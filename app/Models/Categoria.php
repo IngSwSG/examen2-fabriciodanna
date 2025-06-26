@@ -9,7 +9,8 @@ class Categoria extends Model
 {
    
     use HasFactory;
-
+ protected $table = 'categorias'; // Opcional si el nombre es correcto por convención
+    protected $primaryKey = 'idCategoria'; // ← NECESARIO
     protected $fillable = ['nombre'];
 
     public function materiales()
