@@ -19,10 +19,10 @@ class MaterialControllerTest extends TestCase
 
     
     $data = [
-        'codigo' => 12345,
-        'unidadMedida' => 'Unidad',
-        'descripcion' => 'Material de prueba',
-        'ubicacion' => 'Almacén A',
+        'codigo' => 12,
+        'unidadMedida' => 'Med',
+        'descripcion' => 'prueba',
+        'ubicacion' => 'Almacén',
         'idCategoria' => $categoria->idCategoria, 
     ];
 
